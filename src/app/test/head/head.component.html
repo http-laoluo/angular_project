@@ -1,0 +1,20 @@
+<div class="head">
+   <div>{{name}}---{{userinfo}}</div>
+   <div [innerHTML]="innerHTML"></div>
+
+   <div>
+      <div *ngFor="let item of arr; let key = index" class="name">
+
+         <span>{{item.name}} --- {{item.age}} --{{key}}</span>
+      </div>
+      
+   </div>
+
+   <div>{{dete | date:'yyyy-MM-dd HH:mm:ss'}}</div>
+
+   <div *ngIf="flag">99999</div>
+
+   <button (click)="run()">点击</button>
+
+   <input [(ngModel)]="valuedata"/> {{valuedata}}
+</div>

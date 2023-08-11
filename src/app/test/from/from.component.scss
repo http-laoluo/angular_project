@@ -1,0 +1,22 @@
+.from {
+    width: 100%;
+    min-height: 100vh;
+    padding:  10px;
+    background-color: #f9f9f9;
+}
+.frombox{
+    border:1px solid #ccc;
+    background-color: #fff;
+    padding:  10px;
+}
+.content{
+    width: 100%;
+    padding: 5px;
+   
+}
+.itemli{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:14px;
+}

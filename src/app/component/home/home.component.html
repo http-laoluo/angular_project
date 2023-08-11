@@ -1,0 +1,28 @@
+
+<div class="home">
+    <div class="head">
+        <div class="head_tab1">
+            热销榜单
+        </div>
+        <div class="head_tab_hr"></div>
+        <div class="head_tab1">
+            点过的菜
+        </div>
+        <div class="head_tab_hr"></div>
+        <div class="head_tab1">
+            猜你喜欢
+        </div>
+    </div>
+    <div class="content" *ngFor="let item of list;let key = index;">
+        <h3 class="content_head">
+           {{item.title}}
+        </h3>
+        <div class="content_list" >
+            <a [routerLink]='["/detail",val?._id]'  class="content_list_item" *ngFor="let val of item.list">
+                <img class="item_img" [src]="common.url+val.img_url" alt="">
+                <div class="item_title">{{val.title}}</div>
+                <div class="item_money">￥{{val.price}}</div>
+            </a>
+        </div>
+    </div>
+</div>

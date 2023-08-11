@@ -1,0 +1,33 @@
+.tabbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    // height: 48px;
+    border-top: 1px solid #ccc;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.tabbar_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.item_img{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 2px;
+}
+.item_title{
+    font-size: 14px;
+    color: #111;
+}
+.ac {
+    font-size: 14px;
+    color: red;
+}

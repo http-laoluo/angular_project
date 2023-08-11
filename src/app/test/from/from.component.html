@@ -1,0 +1,38 @@
+
+<div class="from">
+    <div class="frombox">
+
+        <h2 style="text-align: center;">人员登记</h2>
+        <div class="content"> 
+            <div class="itemli">
+                姓名： <input  [(ngModel)]="fromInfo.name"/>
+           </div>
+           <div class="itemli">
+                性别： <input type="radio" id="set1" value="男"  [(ngModel)]="fromInfo.sex"/> <label for="set1">男</label> &nbsp;&nbsp;
+                <input type="radio" id="set2" value="女"  [(ngModel)]="fromInfo.sex"/> <label for="set2">女</label>
+            </div>
+            <div class="itemli">
+                居住城市：<select id="city" name="city" [(ngModel)]="fromInfo.city">
+                            <option value="{{item}}" *ngFor="let item of fromInfo.cityList">{{item}}</option>
+                         </select>
+           </div>
+           <div class="itemli">
+    
+            性别： <span *ngFor="let item of fromInfo.poddyList;let key = index"> 
+                   <input type="checkbox" name="" id="{{'poddy'+key}}" checked="{{item.check}}" [(ngModel)]="item.check"/> <label for="{{'poddy'+key}}">{{item.name}}</label> &nbsp;&nbsp;
+                 </span> 
+           
+            </div>
+            <div class="itemli">
+                备注： <textarea  [(ngModel)]="fromInfo.mark"></textarea>
+           </div>
+    
+             
+    
+           <div>
+              {{fromInfo | json}}
+           </div>
+        </div>
+        
+    </div>
+</div>

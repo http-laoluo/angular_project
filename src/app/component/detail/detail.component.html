@@ -1,0 +1,38 @@
+<div class="detail">
+    <div class="detail_back" (click)="onback()">
+       <&nbsp;&nbsp;返回
+    </div>
+    <div class="detail_head">
+        <img [src]="common.url + data?.img_url"  alt="" class="head_img">
+        <h3 class="head_title">
+           {{data?.title}}
+        </h3>
+        <div class="head_money">
+            {{data?.price}}/份
+        </div>
+    </div>
+    <div class="detail_foot">
+        <h4 class="foot_h4">商品详情</h4>
+        <img [src]="common.url+data?.img_url" src="" alt="" class="foot_img">
+
+    </div>
+    <div class="detail_fiexd">
+           <div class="fiexd_left">
+               <div class="left_text">
+                     数量
+               </div>
+               <div class="left_t1">
+                    -
+                </div>
+                <div class="left_t1 left_t2">
+                    1
+                </div>
+                <div class="left_t1">
+                    +
+                </div>
+           </div>
+           <div class="fiexd_right">
+               加入购物车
+           </div>
+    </div>
+</div>

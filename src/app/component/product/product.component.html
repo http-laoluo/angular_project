@@ -1,0 +1,16 @@
+<div class="product">
+    <h2>父子嵌套路由</h2>
+    <div class="head">
+          我是头部导航栏
+    </div>
+    <div class="content">
+        <div class="content_left">
+            <div class="left_item" *ngFor="let item of navList" (click)="go(item.path)">
+                 {{item.title}}
+            </div>
+        </div>
+        <div class="content_rigth">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

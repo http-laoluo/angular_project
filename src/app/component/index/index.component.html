@@ -1,0 +1,11 @@
+<router-outlet></router-outlet>
+
+<div class="tabbar">
+     <div class="tabbar_item" *ngFor="let item of tabbar;let key = index" (click)="go(item.path,key)"> 
+        <img *ngIf="index!=key" [src]="item.img" alt="" class="item_img">
+        <img *ngIf="index==key" [src]="item.acimg" alt="" class="item_img">
+         <div [class]="index==key?'ac ':'item_title'">
+            {{item.title}}
+         </div>
+     </div>
+</div>

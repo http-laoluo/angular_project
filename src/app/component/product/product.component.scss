@@ -1,0 +1,40 @@
+.product{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+h2 {
+    text-align: center;
+}
+.head{
+    width: 100%;
+    height: 48px;
+    background-color: palevioletred;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content_left{
+    flex: 1;
+    height: 80vh;
+    background-color: pink;
+}
+.left_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 36px;
+    background-color: aquamarine;
+    color: #222;
+
+}
+.content_rigth{
+    flex: 3;
+    height: 80vh;
+    background-color: skyblue;
+}
